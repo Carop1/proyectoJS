@@ -6,7 +6,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+#sidebar{
+	padding-top: 1%;
+}
 :root {
 	--grey: #F1F0F6;
 	--dark-grey: #8D8D8D;
@@ -20,6 +22,9 @@
 	--red: #FC3B56;
 }
 
+.brand{
+	position: fixed;
+}
 html {
 	overflow-x: hidden;
 }
