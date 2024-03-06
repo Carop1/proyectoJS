@@ -4,25 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="style.css">
-	<script src="main.js" async></script>
-	<script src="app.js" defer type="module"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js" async></script>
+	<script src="js/app.js" defer type="module"></script>
 	<title>AdminSite</title>
 </head>
 <body>
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-		<a href="#" class="brand"><img src="images/logo.png" width="60px">CampusLands</a>
+		<a href="#" class="brand"><img src="images/logo.png" width="60px" alt="logo">CampusLands</a>
 		<ul class="side-menu">
 			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> ACTIVOS</a></li>
 			<li class="divider" data-text="main">Main</li>
 			<li>
 				<a href="#"><i class='bx bxs-inbox icon' ></i> Categoria Activo <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
-					<li><a href="#">Agregar</a></li>
-					<li><a href="#">Editar</a></li>
-					<li><a href="#">Eliminar</a></li>
-					<li><a href="#">Buscar </a></li>
+					<li><input type="button" onclick="mostrarDashboardAgregar()" title="Agregar" value="Agregar" class="botonCategoria"></input></li>
+					<li><input type="button" onclick="mostrarDashboardEditar()" title="Editar" value="Editar" class="botonCategoria"></input></li>
+					<li><input type="button" onclick="mostrarDashboardEliminar()" title="Eliminar" value="Eliminar" class="botonCategoria"></input></li>
+					<li><input type="button" onclick="mostrarDashboardBuscar()" title="Buscar" value="Buscar" class="botonCategoria"></input></li>
 				</ul>
 			</li>
 			<li>
@@ -155,59 +155,58 @@
 				<li class="divider">/</li>
 				<li><a href="#" class="active">Dashboard</a></li>
 			</ul>
-			<div class="info-data">
-				<div class="card">
-					<div class="head">
-						<div>
-							<h2>1500</h2>
-							<p>Traffic</p>
-						</div>
-						<i class='bx bx-trending-up icon' ></i>
-					</div>
-					<span class="progress" data-value="40%"></span>
-					<span class="label">40%</span>
-				</div>
-				<div class="card">
-					<div class="head">
-						<div>
-							<h2>234</h2>
-							<p>Sales</p>
-						</div>
-						<i class='bx bx-trending-down icon down' ></i>
-					</div>
-					<span class="progress" data-value="60%"></span>
-					<span class="label">60%</span>
-				</div>
-				<div class="card">
-					<div class="head">
-						<div>
-							<h2>465</h2>
-							<p>Pageviews</p>
-						</div>
-						<i class='bx bx-trending-up icon' ></i>
-					</div>
-					<span class="progress" data-value="30%"></span>
-					<span class="label">30%</span>
-				</div>
-				<div class="card">
-					<div class="head">
-						<div>
-							<h2>235</h2>
-							<p>Visitors</p>
-						</div>
-						<i class='bx bx-trending-up icon' ></i>
-					</div>
-					<span class="progress" data-value="80%"></span>
-					<span class="label">80%</span>
-				</div>
-			</div>
 			<div class="data">
 				<div class="content-data">
 					<div class="head">
-						<h3>Sales Report</h3>
+						<h3>Agregar Activo</h3>
 					</div>
 					<!-- conteido -->
-					<h1>Hola Mundo</h1>
+					<div id="dashboardAgregar">
+						<!-- <h1>Que mas de nuevo</h1> //__________________________________________ -->
+						<div>
+							<div>
+								<label for="nombreActivo">Nombre del activo:</label>
+								<br>
+								<input type="text" name="activo" size="40" id="nombreActivo">
+							</div>
+							<div id="fechas">
+								<div id="compra">
+									<label for="fechaCompra">Fecha de compra:</label>
+									<br>
+									<input type="date" id="fechaCompra">
+								</div>
+							</div>
+							<div>
+								<label for="valorUnitario">Valor unitario:</label>
+								<br>
+								<input type="text" name="valorUnitario" size="40" id="valorUnitario">
+							</div>
+						  <label for="tipoActivo">Seleccione el tipo de activo:</label>
+						  <br>
+						  <select id="tipoActivo">
+							<option value="monitor">Monitor</option>
+							<option value="CPU">CPU</option>
+							<option value="teclado">Teclado</option>
+							<option value="mouse">Mouse</option>
+							<option value="aire">Aire Acondicionado</option>
+							<option value="portatil">Portatil</option>
+							<option value="impresora">Impresora</option>
+						  </select>
+					
+						  <div>
+							<button onclick="agregarActivo()"><img src="images/flechaAbajo.png" alt="flechaAbajo" id="flechaAbajo"></button>
+						  </div>
+						</div>
+					</div>
+					<div id="dashboardEditar">
+						<h1>Ahora si viene lo chido</h1>
+					</div>
+					<div id="dashboardEliminar">
+						<h1>Veamos</h1>
+					</div>
+					<div id="dashboardBuscar">
+						<h1>Mas que bien</h1>
+					</div>
 				</div>
 			
 			</div>
