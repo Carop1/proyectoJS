@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js" async></script>
-	<script src="js/app.js" defer type="module"></script>
+	
 	<title>AdminSite</title>
 </head>
 <body>
@@ -148,71 +147,77 @@
 		<!-- NAVBAR -->
 
 		<!-- MAIN -->
-		<main>
+		<main id="main">
 			<h1 class="title">Dashboard</h1>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
 				<li><a href="#" class="active">Dashboard</a></li>
 			</ul>
-			<div class="data">
+			<div id="data">
 				<div class="content-data">
 					<div class="head">
 						<h3>Agregar Activo</h3>
 					</div>
-					<!-- conteido -->
-					<div id="dashboardAgregar">
-						<!-- <h1>Que mas de nuevo</h1> //__________________________________________ -->
-						<div>
-							<div>
-								<label for="nombreActivo">Nombre del activo:</label>
-								<br>
-								<input type="text" name="activo" size="40" id="nombreActivo">
-							</div>
-							<div id="fechas">
-								<div id="compra">
-									<label for="fechaCompra">Fecha de compra:</label>
-									<br>
-									<input type="date" id="fechaCompra">
-								</div>
-							</div>
-							<div>
-								<label for="valorUnitario">Valor unitario:</label>
-								<br>
-								<input type="text" name="valorUnitario" size="40" id="valorUnitario">
-							</div>
-						  <label for="tipoActivo">Seleccione el tipo de activo:</label>
-						  <br>
-						  <select id="tipoActivo">
-							<option value="monitor">Monitor</option>
-							<option value="CPU">CPU</option>
-							<option value="teclado">Teclado</option>
-							<option value="mouse">Mouse</option>
-							<option value="aire">Aire Acondicionado</option>
-							<option value="portatil">Portatil</option>
-							<option value="impresora">Impresora</option>
-						  </select>
+					<!-- contenido -->
 					
+					<div id="dashboardAgregar">
+						<!--  //__________________________________________ -->
+						<div>
+							
+							<div>
+								<label for="nombreCategoria">Nombre del Categoria:</label>
+								<br>
+								<input type="text" name="activo" size="40" id="nombreCategoria">
+							</div>
+							<br>
 						  <div>
-							<button onclick="agregarActivo()"><img src="images/flechaAbajo.png" alt="flechaAbajo" id="flechaAbajo"></button>
+							<button class="boton" onclick="agregarActivo()"><img src="images/flechaAbajo.png" alt="flechaAbajo" id="flechaAbajo"></button>
 						  </div>
 						</div>
 					</div>
 					<div id="dashboardEditar">
-						<h1>Ahora si viene lo chido</h1>
+						<div>
+							<label for="infoBusquedaEditar">Introducir busqueda:</label>
+							<br>
+							<input type="text" name="infoBusquedaEditar" size="20%" id="idBusquedaEditar" placeholder="Ingrese el ID de la categoria">
+						</div>
+						
+        <!-- Otros campos para editar -->
+						<label for="nuevoNombreActivo">Nuevo Nombre:</label>
+						<br>
+						<input type="text" id="nuevoNombreActivo" name="nuevoNombreActivo">
+						<br>
+						
+						<br>
+						<button type="button" onclick="editarActivo()">Editar Activo</button>
+    
+
 					</div>
 					<div id="dashboardEliminar">
-						<h1>Veamos</h1>
+						<label for="idBusquedaEliminar">Eliminar Categoria:</label>
+							<input type="text" id="idBusquedaEliminar" name="idBusquedaEliminar">
+
+							<button type="button" onclick="eliminarActivo()">Eliminar categoria</button>
 					</div>
 					<div id="dashboardBuscar">
-						<h1>Mas que bien</h1>
+						<div id="contenido">
+						<label for="idBusqueda">Buscar Categoria:</label>
+							<input type="text" id="idBusqueda" name="idBusqueda">
+
+							<button type="button" onclick="buscarActivo()">Buscar categoria</button>
+							
+
+						</div>
 					</div>
 				</div>
-			
 			</div>
+			
 		</main>
 		<!-- MAIN -->
 	</section>
 	<!-- NAVBAR -->
+	<script src="js/main.js" async></script>
+	<script src="js/app.js" defer type="module"></script>
 </body>
 </html>

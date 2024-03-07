@@ -9260,15 +9260,16 @@
       "CodTransaccion": "327",
       "NroFormulario": "966217823",
       "P Empresa": "Campuslands",
-      "Fecha Compra": "01/17/2023",
+      "Fecha Compra": "01/04/2024",
       "Nit": "804005914",
       "Proveedor": "Compumax Computer",
-      "DescripcionId": "Teclado - Bodg50 - 4051 -900 - 0005R5",
+      "DescripcionId": "CPU luminosa gamer",
       "Serial": "CK440U-15365",
-      "Categoria": "Equipos.Computo",
+      "Categoria": "CPU",
       "CantIdad": "1",
       "Ubicacion": "Sala asesoria",
-      "id": "9f97"
+      "id": "9f97",
+      "valorUnitario": "220000"
     },
     {
       "Id": "619",
@@ -14371,21 +14372,6 @@
       "id": "7221"
     },
     {
-      "Id": "977",
-      "CodTransaccion": "111",
-      "NroFormulario": "111111111",
-      "P Empresa": "Grupo Bien Pensado",
-      "Fecha Compra": "",
-      "Nit": "",
-      "Proveedor": "",
-      "DescripcionId": "Cajas Para Mobiliario Hexagonal",
-      "Serial": "Sin serial",
-      "Categoria": "Mobiliario",
-      "CantIdad": "16",
-      "Ubicacion": "Coworking",
-      "id": "c921"
-    },
-    {
       "Id": "978",
       "CodTransaccion": "111",
       "NroFormulario": "111111111",
@@ -14421,6 +14407,32 @@
       "fechaCompra": "2024-03-05",
       "valorUnitario": "133000",
       "tipoActivo": "mouse"
+    },
+    {
+      "id": "f49c",
+      "nombreActivo": "Pantalla 33\"",
+      "fechaCompra": "2024-02-27",
+      "valorUnitario": "250000",
+      "tipoActivo": "monitor"
+    },
+    {
+      "id": "c568",
+      "Id": "45D2",
+      "nombreActivo": "CPU gamer"
+    }
+  ],
+  "categoriaActivo": [
+    {
+      "id": "02",
+      "nombre": "Juegos"
+    },
+    {
+      "id": "34a9",
+      "nombreCategoria": "Electrodomesticos"
+    },
+    {
+      "id": "a1aa",
+      "nombreCategoria": "Pinturas"
     }
   ]
 }

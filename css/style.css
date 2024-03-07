@@ -609,7 +609,15 @@ main .btn-send:hover {
 .botonCategoria:hover{
 	color: var(--dark-blue);;
 }
-
+#flechaAbajo{
+	width: 35px;
+}
+.boton{
+	width: 40%;
+	background: #1775F1;
+	border: 0;
+	border-radius: 8px;
+}
 
 
 
